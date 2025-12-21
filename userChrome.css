@@ -44,6 +44,9 @@
       background: transparent !important;
       border: 5px solid var(--color-overlap);
       outline: none !important;
+      #tabbrowser-tabpanels {
+        background: transparent !important;
+      }
       #vertical-tabs {
         padding-top: 4px
       }
