@@ -16,6 +16,9 @@
   @media not (prefers-reduced-transparency) {
     @supports not -moz-bool-pref( "glassfox.transparency.disabled") {
       appearance: -moz-sidebar !important;
+      html, body {
+        background: transparent !important;
+      }
     }
   }
 }
@@ -64,6 +67,10 @@
       }
     }
   }
+}
+
+[collapsed="true"] {
+  display: none !important;
 }
 
 /* Larger Sidebar Splitter for easier adjusting */
