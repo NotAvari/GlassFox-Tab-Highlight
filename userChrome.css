@@ -135,6 +135,25 @@ scrollbox  {
     }
   }
 }
+/* Active (selected) tab highlight */
+#tabbrowser-tabs tab[selected="true"] {
+  & .tab-background {
+    /* Tint */
+    background: color-mix(in srgb, currentColor 5%, var(--tab-bg, transparent)) !important;
+    /* Visible border */
+    outline: 2px solid currentColor !important;
+    outline-offset: -2px !important;
+    /* Glow effect */
+    box-shadow: 0 0 8px 1px color-mix(in srgb, currentColor 15%, transparent) !important;
+  }
+  & .tab-icon-stack {
+    scale: 1.15 !important;
+    filter: brightness(1.2) drop-shadow(0 0 6px currentColor) !important;
+  }
+  & .tab-label {
+    font-weight: bold !important;
+  }
+}
 
 /* Tab sizing - Support for magnification or different sizes. */
 #tabbrowser-tabs tab {
